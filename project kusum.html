@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title> Keamanan Komputer </title>
+    </head>
+    
+    <body background="IMG-20180318-WA0012.jpg">
+        <h1 align="center">
+            <marquee direction="right"><font face="consolas" size="10x" color="white">
+                <b>STEGANOGRAFI</b>
+            </font></marquee>
+        </h1>
+        <a href="https://id.wikipedia.org/wiki/Keamanan_komputer"><font align="right" color="orange" size="5px"> 
+            Click here to more detail </font></a>
+        <p></p>
+        <h1><font face="Baskerville Old Face" color="white"> 
+                <i>What is Steganografi ?</i>
+            </font></h1>
+        
+        <h3><font face="Baskerville Old Face" color="white">
+            Kata steganorafi berasal dari Bahaya Yunani yang berarti “tulisan tersembunyi” (covered writing).Steganografi (steganography) adalah ilmu dan menyembunyikan pesan rahasia (hiding message) sedemikian se hingga keberadaan (eksistensi) pesan tidak terdeteksi oleh indera manusia.Steganografi membutuhkan dua properti: wadah penampung dan data rahasia yang akan disembunyikan.Steganografi digital menggunakan media digital sebagai wadah penampung, misalnya citra, suara, teks, dan video. Data rahasia yang  disembunyikan juga dapat berupa citra, suara, teks, atau video.Steganografi dapat dipandang sebagai kelanjutan kriptografi.Jika pada kriptografi, data yang telah disandikan (ciphertext ) tetap tersedia, maka dengan steganografi cipherteks dapat disembunyikan sehingga pihak ketiga tidak mengetahui keberadaannya.Di negara-negara yang melakukan penyensoran informasi,steganografi sering digunakan untuk menyembunyikan pesan-pesan melalui gambar (images), video, atau suara(audio).
+            </font></h3>
+        
+        <h3> <font face="Baskerville Old Face" color="white"> <i>Kriteria Steganografi yang Bagus:</i> </font>
+        </h3>
+        <ol><font face="Baskerville Old Face" color="white"><li>Fidelity;Mutu citra penampung tidak jauh berubah.Setelah penambahan data rahasia, citra hasil steganografi masih terlihat dengan baik.Pengamat tidak mengetahui kalau di dalam citra tersebut terdapat data rahasia.</li>
+        <li>Robustness;Data yang disembunyikan harus tahan terhadap manipulasi yang dilakukan pada citra penampung(seperti pengubahan kontras,penajaman,pemampatan,rotasi,perbesaran gambar, pemotongan ( cropping),enkripsi, dan sebagainya).Bila pada citra dilakukan operasi pengolahan citra,maka data yang disembunyikan tidak rusak.</li>
+        <li>Recovery;Data yang disembunyikan harus dapat diungkapkan kembali (recovery). Karena tujuan steganografi adalah  data hiding, maka sewaktu -waktu data rahasia di dalam citra penampung harus dapat diambil kembali untuk digunakan lebih lanjut.</li>
+        </font></ol>
+        
+        <h3><font face="Baskerville Old Face" color="white"> 
+                <i>Teknik Penyembunyian Data:</i></font> </h3>
+        
+        <ol><font face="Baskerville Old Face" color="white"><li>Penyembunyian data dilakukan dengan mengganti bit-bit data di dalam segmen citra dengan bit-bit dat a rahasia. Metode yang paling sederhana adalah metode modifikasi LSB(Least Significant Bit Modification).</li>
+        <li>Pada susunan bit di dalam sebuah  byte(1  byte= 8 bit), ada bit yang paling berarti (most significant bitatau MSB) dan bit yang paling kurang be rarti (least significant bit atau  LSB ).</li><li> Perhatikan contoh sebuah susunan bit pada sebuah  byte :11010010 LSB = Least Significant Bit, MSB = Most Siginificant Bit MSB LSB Bit yang cocok untuk diganti adalah bit  LSB,sebab perubahan tersebut hanya mengubah nilai byte satu lebih tinggi atau satu lebih rendah dari nilai sebelumnya.</li> <li>Untuk memperkuat teknik penyembunyian data, bit-bit data rahasia tidak digunakan mengganti byte- byteyang berurutan,namun dipilih susunan bytesecara acak. Misalnya jika terdapat 50 bytedan 6 bit data yang akan disembunyikan,maka maka byteyang diganti bit LSB- nya dipilih secara acak,misalkan bytenomor 36,5,21,10,18,49.
+        </li><li> Bilangan acak  dapat dibangkitkan dengan program pseudo random-number-generator (PRNG).PRNGmenggunakankunci rahasia untuk membangkitkan posisi pixelyang akan digunakan untuk menyembunyikan bit-bit.</li><li> PRNG dibangun dalam  sejumlah cara, salah satunya dengan menggunakan algoritma kriptografi berbasis blok (block cipher ). Tujuan dari enkripsi adalah menghasilkan sekumpulan bilangan acak yang sama unt uk setiap kuncienkripsi yang sama.Bilangan acak dihasilkan dengan cara memilih bit-bit dari sebuah blok data hasil enkripsi.</li><li> Sayangnya, metode modifikasi  LSB kurang bagus untuk steganografi, karena robustness-nya rendah. Selain itu, dapat terjadi kasus  penurunan jumlah warna (fidelity rendah)dilakukan.</li>
+            </font></ol>
+        
+    </body>
+</html>
